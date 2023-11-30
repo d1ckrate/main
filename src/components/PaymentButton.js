@@ -91,8 +91,6 @@ function PaymentButton() {
         color={"black"}
         px={6}
         _hover={{ bg: "pink.500", color: "white" }}
-        w="200px"
-        mb="7px"
       >
         {isLoadingPP ? (
           <Spinner />
