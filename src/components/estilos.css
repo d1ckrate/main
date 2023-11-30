@@ -1,0 +1,80 @@
+@media (max-width: 768px) {
+    .icon-container svg {
+      font-size: 2em; /* Ajusta el tamaño del icono para dispositivos pequeños */
+    }
+    .hide-on-mobile {
+      display: none;
+    }
+    .custom-th {
+      max-width: 20px;
+      background-color: black; /* Ancho personalizado para las celdas del encabezado */
+    }
+    
+    .custom-td {
+      max-width: 20px; /* Ancho personalizado para las celdas del cuerpo */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .icon-container svg {
+      font-size: 3em; /* Ajusta el tamaño del icono para dispositivos medianos */
+    }
+  }
+  /* Estilo para ocultar la columna "Inicio" en dispositivos móviles */
+  .boton {
+    background-image: linear-gradient(to bottom, #22103d, #6e264b);
+    color: red; /* Color del texto */
+    border: none; /* Quita el borde del botón */
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón según tus preferencias */
+    border-radius: 5px; /* Ajusta el radio de borde según tus preferencias */
+    cursor: pointer;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+  }
+  
+
+
+/* Establece la altura deseada para todos los slides */
+.slick-slide {
+  height: 200px;
+}
+
+/* Configura la relación de aspecto 16:9 para las imágenes de fondo */
+.slick-slide > div {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Establece los estilos de las imágenes de fondo */
+.daleputo {
+  filter: blur(2px);
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+  width: 200px !important;
+  height: 200px !important;
+  margin: 0 auto;
+  background-position: center center;
+}
+
+.degradeyborde {
+  background: linear-gradient(#b65796, #eed9f2);
+  border: 2px solid #30261a;
+}
