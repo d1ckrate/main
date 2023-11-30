@@ -67,7 +67,7 @@ export default async function handler(req, res) {
       "Set-Cookie",
       `token=${token}; HttpOnly; Path=/; Max-Age=${60 * 60 * 24};`
     );
-    return res.redirect("/success?public_key=" + public_key); // Redirigir a la ruta de éxito en tu aplicación
+    return res.redirect("/Success?public_key=" + public_key); // Redirigir a la ruta de éxito en tu aplicación
   } catch (error) {
     if (error.code === 11000) {
       // Manejar el error de duplicado aquí si es necesario

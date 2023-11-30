@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       "Set-Cookie",
       `token=${token}; HttpOnly; Path=/; Max-Age=${60 * 60 * 24};`
     );
-    res.redirect("/success");
+    res.redirect("/Success");
   } catch (error) {
     console.error(
       "Error intercambiando el código de PayPal por un token de acceso",
